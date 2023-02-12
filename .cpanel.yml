@@ -2,7 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home4/bebppfmy/public_html
-    - /bin/cp static/* $DEPLOYPATH
+    - export STATIC=/home4/bebppfmy/public_html/static
+    - /bin/cp static/* $STATIC
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp index.js $DEPLOYPATH
     - /bin/cp index.txt $DEPLOYPATH
