@@ -17,4 +17,4 @@ jobs:
         server: beb.ppf.mybluehost.me
         username: ${{ secrets.BLUEHOST_USERNAME }}
         password: ${{ secrets.BLUEHOST_PASSWORD }}
-        server-dir: /home4/bebppfmy/
+        server-dir: /public_html/
