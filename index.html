@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html color-mode="user">
 
 <head>
     <title>Hello World</title>
@@ -7,27 +7,28 @@
     <script src="https://cdn.jsdelivr.net/npm/marked@0.7.0/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
-    <style>
-        .file_link {
-            text-decoration: underline;
-            color: blue;
-            cursor: pointer;
-        }
-    </style>
-
 </head>
 
 <body>
     <header>
+        <nav>
+            <a href="https://www.linkedin.com/in/christianisaman/">LinkedIn</a>
+            <ul>
+                <li><a href="https://github.com/thrivingproject/christianisaman">GitHub ↗</a></li>
+            </ul>
+        </nav>
         <h1>Christian Isaman</h1>
+        <p>The beginnings of a portfolio!</p>
     </header>
     <main>
         <section>
             <aside>
+                <h2>Guides</h2>
                 <ul id="file_list"></ul>
             </aside>
         </section>
-        <div id="file_content"></div>
+        <hr>
+        <article id="file_content"></article>
     </main>
 </body>
 
