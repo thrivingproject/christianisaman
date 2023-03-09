@@ -91,7 +91,7 @@ If there are merge conflicts, follow the steps above for [fixing merge conflicts
 
 Finally, delete the branch by running `% git branch -d <branch>`.
 ### Remotes
-To my laptop, GitHub is remote, and my `.git` directory is local. To the remote repository (GitHub) my laptop is a remote respository. The two can be connected by writing `git remote add <URL-of-remote-github-repository>`. The URL can be access via the GitHub repository's webpage.
+To my laptop, GitHub is remote, and my `.git` directory is local. To the remote repository (GitHub) my laptop is a remote respository. The two can be connected by writing `git remote add <URL-of-remote-github-repository>`. The URL can be obtained via the GitHub repository's webpage.
 
 ## GitHub CLI `gh`
 
