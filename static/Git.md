@@ -15,8 +15,6 @@ To create a new git repository (with a branch named *main*), run:
  ```
 ### .gitignore
 To stop Git from staging certain files (when running `% git add .`) or showing files as untracked (when running `% git status`), create a file named `.gitignore` in the root directory, and add to it accordingly as follows:
-
-
 ```
 # Enter a file or directy name to ignore it in the entire working tree
 Foo.md
@@ -92,6 +90,8 @@ To merge a branch into the main branch, `checkout` the main branch, and then run
 If there are merge conflicts, follow the steps above for [fixing merge conflicts](#Fixing-Merge-Conflicts).
 
 Finally, delete the branch by running `% git branch -d <branch>`.
+### Remotes
+To my laptop, GitHub is remote, and my `.git` directory is local. To the remote repository (GitHub) my laptop is a remote respository. The two can be connected by writing `git remote add <URL-of-remote-github-repository>`. The URL can be access via the GitHub repository's webpage.
 
 ## GitHub CLI `gh`
 
@@ -126,20 +126,3 @@ To delete repository from GitHub.com, run (from the working directory of the loc
 ```
 % gh repo delete --confirm
 ```
-
-## Vim
-If `git commit` is ran without the `-m` flag, Vim editor is lauched, at which point a commit message is requested; write the commit message in the Vim editor, save, and exit.
-
-
-### Write To File In Editor
-Enter insert mode by pressing `i`. Notice
-```
----INSERT---
-```
-appear at the bottom of the editor.
-
-### Exit Insert Mode
-Enter esape mode by pression `esc`. The bottom of the editor should be blank.
-
-### Save and quit
-Type `:x` and press enter to run the write (`:w`) and quit (`:q`) alias (`:wq`).
